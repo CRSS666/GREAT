@@ -35,20 +35,20 @@ The track tiles are based on a `9-1-9-1` grid (see the example below).
 | Direction signs | `<` and `>` |
 
 ```txt
-                   === Base Layer ===
+=== Base Layer ===
 
->  1     9     1     9     1     9     1     9      >
->  c-ccccccccc-c-ccccccccc-c-ccccccccc-c-ccccccccc  >
->  c-t       t-c-t       t-c-t       t-c-t       t  >
->  c-ccccccccc-c-ccccccccc-c-ccccccccc-c-ccccccccc  >
+>   1     9     1     9     1     9     1     9      >
+>   c-ccccccccc-c-ccccccccc-c-ccccccccc-c-ccccccccc  >
+>   c-t       t-c-t       t-c-t       t-c-t       t  >
+>   c-ccccccccc-c-ccccccccc-c-ccccccccc-c-ccccccccc  >
 
 
-                   === Rail Layer ===
+=== Rail Layer ===
 
->  1     9     1     9     1     9     1     9      >
->  R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr  >
->  T-         -T-         -T-         -T-           >
->  R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr  >
+>   1     9     1     9     1     9     1     9      >
+>  >R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr> >
+>   T-         -T-         -T-         -T-           >
+>  <R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr< >
 ```
 #### Station Stops
 
@@ -71,11 +71,11 @@ in a convenient way for the passenger.
 >              | > 
 
 
-    === Side View - Station Stop ===
+=== Side View - Station Stop ===
 
 > >---  ----> | > --+  ----
 >     \/      | >    +-
 >             | >
-> >----  ---< | > ----  +--
+> <----  ---< | > ----  +--
 >      \/     | >     -+
 ```
