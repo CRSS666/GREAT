@@ -23,28 +23,59 @@ GREAT is an easily-expansible and resource-efficient railway transit system.
 
 The track tiles are based on a `9-1-9-1` grid (see the example below).
 
-| Block          | Character |
-|----------------|-----------|
-| Cobblestone    | `c`       |
-| Redstone Torch | `T`       |
-| Torch          | `t`       |
-| Rail           | `r`       |
-| Powered Rail   | `R`       | 
-| Air            | *empty*   |
+| Block           | Character   |
+|-----------------|-------------|
+| Cobblestone     | `c`         |
+| Redstone Torch  | `T`         |
+| Torch           | `t`         |
+| Rail            | `r`         |
+| Powered Rail    | `R`         | 
+| Air             | *empty*     |
+| Grid spacing    | `-`         |
+| Direction signs | `<` and `>` |
 
 ```txt
                    === Base Layer ===
 
 >  1     9     1     9     1     9     1     9      >
->  c ccccccccc c ccccccccc c ccccccccc c ccccccccc  >
->  c t       t c t       t c t       t c t       t  >
->  c ccccccccc c ccccccccc c ccccccccc c ccccccccc  >
+>  c-ccccccccc-c-ccccccccc-c-ccccccccc-c-ccccccccc  >
+>  c-t       t-c-t       t-c-t       t-c-t       t  >
+>  c-ccccccccc-c-ccccccccc-c-ccccccccc-c-ccccccccc  >
 
 
                    === Rail Layer ===
 
 >  1     9     1     9     1     9     1     9      >
->  R rrrrrrrrr R rrrrrrrrr R rrrrrrrrr R rrrrrrrrr  >
->  T           T           T           T            >
->  R rrrrrrrrr R rrrrrrrrr R rrrrrrrrr R rrrrrrrrr  >
+>  R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr  >
+>  T-         -T-         -T-         -T-           >
+>  R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr  >
+```
+#### Station Stops
+
+Station stops are a little more complicated. We use angled Powered Rails
+and buttons or redstone signals to make the minecarts stop and accelerate
+in a convenient way for the passenger.
+
+| Block       | Character | Front-view Character | Rail Type | Type Character |
+|-------------|-----------|----------------------|-----------|----------------|
+| Rail        | `r`       | `-`                  | Powered   | `+`            |
+| Angled Rail | `R`       | `\` or `/`           | Normal    | `-`            |
+
+```txt
+=== Top-Down View - Station Stop ===
+
+>              | > 
+> >rrrRRrrrr>  | > --++-----
+>              | > 
+> <rrrrRRrrr<  | > -----++--
+>              | > 
+
+
+    === Side View - Station Stop ===
+
+> >---  ----> | > --+  ----
+>     \/      | >    +-
+>             | >
+> >----  ---< | > ----  +--
+>      \/     | >     -+
 ```
