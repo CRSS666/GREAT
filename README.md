@@ -37,18 +37,18 @@ The track tiles are based on a `9-1-9-1` grid (see the example below).
 ```txt
 === Base Layer ===
 
->   1     9     1     9     1     9     1     9      >
->   c-ccccccccc-c-ccccccccc-c-ccccccccc-c-ccccccccc  >
->   c-t       t-c-t       t-c-t       t-c-t       t  >
->   c-ccccccccc-c-ccccccccc-c-ccccccccc-c-ccccccccc  >
+>       9     1     9     1     9     1     9     1  >
+>   ccccccccc-c-ccccccccc-c-ccccccccc-c-ccccccccc-c  >
+>   t       t-c-t       t-c-t       t-c-t       t-c  >
+>   ccccccccc-c-ccccccccc-c-ccccccccc-c-ccccccccc-c  >
 
 
 === Rail Layer ===
 
->   1     9     1     9     1     9     1     9      >
->  >R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr> >
->   T-         -T-         -T-         -T-           >
->  <R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr< >
+>       9     1     9     1     9     1     9     1  >
+>  >rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr-R> >
+>            -T-         -T-         -T-         -T  >
+>  <rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr-R-rrrrrrrrr-R< >
 ```
 #### Station Stops
 
