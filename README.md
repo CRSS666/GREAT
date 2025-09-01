@@ -12,8 +12,9 @@ contact [WorldWidePixel](https://WorldWidePixel.ca) or [Blurry](https://blurry.g
 
 Things *may* get long, so for future-proofing we'll include a chapter index.
 
-1. The System
-    - Track Tile Grid
+1. [The System](./#1-the-system)
+    - [Track Tile Grid](./#track-tile-grid)
+        - [Station Stops](./#station-stops)
 
 ## 1. The System
 
