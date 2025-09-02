@@ -15,6 +15,7 @@ Things *may* get long, so for future-proofing we'll include a chapter index.
 1. [The System](./#1-the-system)
     - [Track Tile Grid](./#track-tile-grid)
         - [Station Stops](./#station-stops)
+        - [Turn Tiles](./#turn-tiles)
 
 ## 1. The System
 
@@ -79,4 +80,58 @@ in a convenient way for the passenger.
 >                 | >
 > <----  ---<     | > ----  +--
 >      \/         | >     -+
+```
+
+#### Turn Tiles
+
+Turn Tiles are a little tricky since they must keep within the grid.
+They are also a bit more expensive with Powered Rails and Redstone Torches
+to ensure the minecart doesn't get stuck on them.
+
+| Block        | Direction     | Character |
+|--------------|---------------|-----------|
+| Rail         | North - South | `\|`      |
+| Rail         | West  - East  | `-`       |
+| Curved Rail  | South - East  | ¹         |
+| Curved Rail  | South - West  | ²         |
+| Curved Rail  | North - East  | ³         |
+| Curved Rail  | North - West  | ⁴         |
+| Powered Rail | North - South | `*`       |
+| Powered Rail | West  - East  | `+`       |
+
+```txt
+=== Multiline 'characters' ===
+
+¹ = / -    |  ³ =  |
+    |      |     - /
+           |  
+² = - \    |  ⁴ = |
+      |    |      \ -
+```
+---
+```txt
+  N     | 
+W + E   |    === Turn Tiles - Top-down ===
+  S     | 
+---------
+
+S <-> E
+
+
+/ + - - + - - - - - - - >
+*  
+|     / + - - - - - - - >
+*     *
+|     |
+|     |
+|     |
+|     |
+|     |
+|     |
+|     |
+|     |
+|     |
+     
+^     ^
+
 ```
