@@ -112,10 +112,8 @@ to ensure the minecart doesn't get stuck on them.
 ```txt
   N     | 
 W + E   |    === Turn Tiles - Top-down ===
-  S     | 
+  S     |         <-- SOUTH - EAST -->
 ---------
-
-S <-> E
 
 
 / + - - + - - - - - - - >
