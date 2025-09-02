@@ -65,18 +65,18 @@ in a convenient way for the passenger.
 ```txt
 === Top-Down View - Station Stop ===
 
->              | > 
-> >rrrRRrrrr>  | > --++-----
->              | > 
-> <rrrrRRrrr<  | > -----++--
->              | > 
+>                 | > 
+> >rrrRRrrrr>     | > --++-----
+>                 | > 
+> <rrrrRRrrr<     | > -----++--
+>                 | > 
 
 
-=== Side View - Station Stop ===
+=== Side View   -   Station Stop ===
 
-> >---  ---->  | > --+  ----
->     \/       | >    +-
->              | >
-> <----  ---<  | > ----  +--
->      \/      | >     -+
+> >---  ---->     | > --+  ----
+>     \/          | >    +-
+>                 | >
+> <----  ---<     | > ----  +--
+>      \/         | >     -+
 ```
