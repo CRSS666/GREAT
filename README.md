@@ -88,6 +88,8 @@ Turn Tiles are a little tricky since they must keep within the grid.
 They are also a bit more expensive with Powered Rails and Redstone Torches
 to ensure the minecart doesn't get stuck on them.
 
+The tiles for these are *massive*, so I separated them each on a code block.
+
 | Block        | Direction     | Character |
 |--------------|---------------|-----------|
 | Rail         | North - South | `\|`      |
@@ -102,11 +104,11 @@ to ensure the minecart doesn't get stuck on them.
 ```txt
 === Multiline 'characters' ===
 
-¹ = / -    |  ³ =  |
-    |      |     - /
-           |  
-² = - \    |  ⁴ = |
-      |    |      \ -
+¹ = / -     |   ³ =  |
+    |       |      - /
+            |   
+² = - \     |   ⁴ = |
+      |     |       \ -
 ```
 ---
 ```txt
@@ -129,7 +131,74 @@ W + E   |    === Turn Tiles - Top-down ===
 |     |
 |     |
 |     |
-     
+        
 ^     ^
 
+```
+---
+```txt
+  N     | 
+W + E   |    === Turn Tiles - Top-down ===
+  S     |         <-- SOUTH - WEST -->
+---------
+
+
+< - - - - - - + - - + \
+                      *
+< - - - - - - + \     |
+                *     *
+                |     |
+                |     |
+                |     |
+                |     |
+                |     |
+                |     |
+                |     |
+                |     |
+                |     |
+                        
+                ^     ^
+
+```
+---
+```txt
+  N     | 
+W + E   |    === Turn Tiles - Top-down ===
+  S     |         <-- NORTH - EAST -->
+---------
+
+
+V     V
+|     |
+|     |
+|     |
+|     |
+|     |
+|     |
+|     |
+*     *
+|     \ + - - - - - - - - >
+*     
+\ + - - + - - - - - - - - >
+```
+---
+```txt
+  N     | 
+W + E   |    === Turn Tiles - Top-down ===
+  S     |         <-- NORTH - WAST -->
+---------
+
+
+                  V     V
+                  |     |
+                  |     |
+                  |     |
+                  |     |
+                  |     |
+                  |     |
+                  |     |
+                  *     *
+< - - - - - - - + /     |
+                        *
+< - - - - - - - + - - + /
 ```
