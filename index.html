@@ -21,6 +21,10 @@
             margin: 0;
             padding: 0;
             font-family: 'Comic Sans MS', Arial, 'Inter', sans-serif;
+            
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 60px;
         }
         .topbar {
             width: auto;
@@ -38,8 +42,15 @@
             color: #000;
             text-decoration: none;
         }
-        .center{
-            align-items: center; /* why doesn't this work? hhh i'll keep using <center>*/
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+            padding: 15px;
+            background-color: #f5b781;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -67,14 +78,27 @@
         We'll also be expanding our <i>great</i> GREAT system to CRSS when the time is right. For now,<br>
         you can enjoy riding for <i>free <b>forever</b></i> in the CRSS 3 town.
     </p>
-    <iframe src="http://de-orcl1.n.theclashfruit.me:26080/#" width="800px" height="450px"></iframe>
+    <iframe src="http://de-orcl1.n.theclashfruit.me:26080/#"></iframe>
     </center>
 
+    <footer>
     <center>
-    <br>
-    <br>
-    <br>
-    <a href="https://github.com/crss666/great/tree/crssi/simple/">Source Code</a>
+
+    <p>
+        © 2025 GREAT Transit Corp. (CRSS) - All Rights Reserved
+    </p>
+    <p><i>
+        You are allowed to fork, alter, and publish your own version of the GREAT
+        Website, as long as you remove all mentions to GREAT's Branding.
+    </i></p>
+    <p>
+        <a href="/info/about.html">About</a> · 
+        <a href="/info/lines.html">Lines</a> · 
+        <a href="https://github.com/crss666/great/tree/crssi/simple" target="_blank">Source Code</a> · 
+        <a href="https://crssi.cc" target="_blank">Click me!</a>
+    </p>
+
     </center>
+    </footer>
 </body>
 </html>

@@ -8,7 +8,7 @@
     <!-- Discord and co. meta stuff -->
 
     <meta content="GREAT Transit website" property="og:title" />
-    <meta content="The official website for the GREAT Redstone Enabled Automatic Transit system" property="og:description" />
+    <meta content="The page for general information about the GREAT Redstone Enabled Automatic Transit system." property="og:description" />
     <meta content="https://s.great.three.crssi.cc/" property="og:url" />
     <meta content="https://github.com/CRSS666/GREAT/blob/crssi/simple/img/banner.png?raw=true" property="og:image" />
     <meta content="#f5821f" data-react-helmet="true" name="theme-color" />
@@ -21,6 +21,10 @@
             margin: 0;
             padding: 0;
             font-family: 'Comic Sans MS', Arial, 'Inter', sans-serif;
+
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 60px;
         }
         .topbar {
             width: auto;
@@ -38,6 +42,16 @@
             color: #000;
             text-decoration: none;
         }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+            padding: 15px;
+            background-color: #f5b781;
+            font-size: 0.9em;
+        }
     </style>
 
 </head>
@@ -52,11 +66,24 @@
 
     </div>
     tbd
+    <footer>
     <center>
-    <br>
-    <br>
-    <br>
-    <a href="https://github.com/crss666/great/tree/crssi/simple/">Source Code</a>
+
+    <p>
+        © 2025 GREAT Transit Corp. (CRSS) - All Rights Reserved
+    </p>
+    <p><i>
+        You are allowed to fork, alter, and publish your own version of the GREAT
+        Website, as long as you remove all mentions to GREAT's Branding.
+    </i></p>
+    <p>
+        <a href="/info/about.html">About</a> · 
+        <a href="/info/lines.html">Lines</a> · 
+        <a href="https://github.com/crss666/great/tree/crssi/simple" target="_blank">Source Code</a> · 
+        <a href="https://crssi.cc" target="_blank">Click me!</a>
+    </p>
+
     </center>
+    </footer>
 </body>
 </html>
